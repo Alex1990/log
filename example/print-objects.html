@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Print objects</title>
+</head>
+<body>
+  <script src="../src/log.js"></script>
+  <script>
+    var log = Log();
+
+    var obj = {
+      name: 'Alex Chao',
+      age: 25,
+      address: {
+        country: 'China',
+        province: 'Guangdong'
+      }
+    };
+    log.s(JSON.stringify(obj));
+
+    var arr1 = [false, 0, '', null, undefined, NaN];
+    log.s(arr1.toString());
+
+    var fn = function foo() {
+      return 'Foo';
+    };
+    log.s(fn.toString());
+
+    var re = /test/g;
+    log.s(re.toString());
+
+    var now = new Date();
+    log.s(now);
+
+    var arr2 = [obj, arr1, fn, re, now];
+    log.s(arr2.toString());
+  </script>
+</body>
+</html>

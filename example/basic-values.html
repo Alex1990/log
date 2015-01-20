@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Print basic values</title>
+</head>
+<body>
+  <script src="../src/log.js"></script>
+  <script>
+    var log = new Log();
+
+    log.s(1)
+      .s(0)
+      .s(false)
+      .s('hello world')
+      .s('')
+      .s(undefined)
+      .s(null)
+      .s(NaN)
+      .s('    ');
+  </script>
+</body>
+</html>

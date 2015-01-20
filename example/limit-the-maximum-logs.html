@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Limit the maximum number of the logs displayed</title>
+</head>
+<body>
+  <script src="../src/log.js"></script>
+  <script>
+    var log = Log({
+      maxCount: 40
+    });
+
+    var i = 100;
+    while (i--) {
+      log.s(i);
+    }
+  </script>
+</body>
+</html>

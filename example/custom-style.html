@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom style</title>
+  <style>
+    .log-box {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 300px;
+      height: 300px;
+      background-color: #333;
+      color: #eee;
+      border: 1px solid #000;
+      overflow: auto;
+    }
+    .log-box p {
+      margin: 0;
+      min-height: 20px;
+      padding: 0 4px;
+      font-size: 14px;
+      line-height: 20px;
+      border-bottom: 1px solid #444;
+    }
+  </style>
+</head>
+<body>
+  <script src="../src/log.js"></script>
+  <script>
+    var log = new Log({
+      className: 'log-box',
+      enableStyled: false
+    });
+
+    var div = document.createElement('div');
+    for (var p in div) {
+      log.s(p);
+    }
+  </script>
+</body>
+</html>
