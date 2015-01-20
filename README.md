@@ -43,7 +43,7 @@ Default options:
     right: '0',
     bottom: '0',
     width: '300px',
-    height: 200px',
+    height: '200px',
     backgroundColor: '#fff',
     border: '1px solid #aaa',
     overflow: 'auto'
