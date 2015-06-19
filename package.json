@@ -1,7 +1,8 @@
 {
   "name": "log",
+  "version": "0.1.1",
   "description": "Display the specified info in the page",
-  "version": "0.1.0",
+  "main": "src/log.js",
   "author": {
     "name": "Alex Chao",
     "email": "alexchao1990@gmail.com"
