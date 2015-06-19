@@ -38,25 +38,8 @@ Default options:
   className: '',
   maxCount: 0,
   enableStyled: true,
-  containerStyle: {
-    position: 'fixed',
-    right: '0',
-    bottom: '0',
-    width: '300px',
-    height: '200px',
-    backgroundColor: '#fff',
-    border: '1px solid #aaa',
-    overflow: 'auto'
-  },
-  itemStyle: {
-    margin: '0',
-    padding: '0 4px',
-    minHeight: '16px',
-    fontSize: '12px',
-    lineHeight: '16px',
-    color: '#333',
-    borderBottom: '1px solid #e8e8e8'
-  }
+  containerStyle: 'position:fixed;right:0;bottom:0;width:300px;height:200px;background-color:#fff;border:1px solid #aaa;overflow:auto;',
+  itemStyle: 'margin:0;padding:0 4px;min-height:16px;font-size:12px;line-height:16px;color:#333;border-bottom:1px solid #e8e8e8;'
 }
 ```
 
